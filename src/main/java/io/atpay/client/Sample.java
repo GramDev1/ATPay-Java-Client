@@ -1,11 +1,15 @@
-# ATPay Java Client
-### _A simple java client for the [ATPay](https://atpay.io) service_
+package io.atpay.client;
 
-## Examples
+import io.atpay.client.data.Order;
+import io.atpay.client.exception.OrderCreationException;
 
-### Creating a new order
+import java.io.IOException;
 
-```
+public class Sample
+{
+
+    public static void main(String... args)
+    {
         ATPay instance = new ATPay("123456"); //Build an ATPay Client with the default OkHttpClient (this can be changed if you need a proxy, etc)
         try
         {
@@ -27,6 +31,5 @@
         {
             //Handle IO Error
         }
-```
-
-For more info on order creation, visit [The Order Documentation on ATPay Docs](https://docs.atpay.io/rest/order-create.html#example-request)
+    }
+}

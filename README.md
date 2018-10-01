@@ -6,7 +6,7 @@ We use [Jitpack](https://jitpack.io) for our build server.
 You can access more instructions [here](https://jitpack.io/#mcjp78/ATPay-Java-Client/1.0)
 ### Maven
 Add the repository
-```   
+```xml
 <repositories>
     <repository>
         <id>jitpack.io</id>
@@ -15,7 +15,7 @@ Add the repository
 </repositories>
 ```
 Add the dependency
-```
+```xml
 <dependency>
     <groupId>com.github.mcjp78</groupId>
     <artifactId>ATPay-Java-Client</artifactId>
@@ -24,7 +24,7 @@ Add the dependency
 ```
 ### Gradle
 Add the jitpack repository service.
-```
+```gradle
 allprojects {
     repositories {
         maven { url 'https://jitpack.io' }
@@ -38,7 +38,7 @@ Add the dependency
 
 ### Creating a new order
 
-```
+```java
         ATPay instance = new ATPay("123456"); //Build an ATPay Client with the default OkHttpClient (this can be changed if you need a proxy, etc)
         try
         {

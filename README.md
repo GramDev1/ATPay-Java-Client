@@ -37,12 +37,10 @@ Add the dependency
 ## Examples
 
 ### Creating a new order
-
 ```java
 ATPay instance = new ATPay("123456"); //Build an ATPay Client with the default OkHttpClient (this can be changed if you need a proxy, etc)
 try
 {
-
     Order order = Order.builder() //Create a new Object Builder
                         .id("1223") //Set a Unique ID for the order for your records
                         .currency("USD") //Set the currency for the order. Currently only "USD" is supported
